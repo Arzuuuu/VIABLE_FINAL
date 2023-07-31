@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+nav {
+    background-color: black;
+    background-size: cover;
+    background-size: 500vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    border-radius:40px;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-links li a:hover {
+    color: greenyellow;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2%;;
+}
+
+
+.back-to-dash a{
+  background-color: bisque;
+  color: rgb(60, 59, 59);
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-to-dash a:hover{
+  background-color: rgb(237, 191, 137);
+}
+
+h1 {
+    text-align: center;
+}
+
+.comment-section {
+    margin-top: 20px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-form textarea {
+    height: 100px;
+}
+
+#comments {
+    margin-top: 20px;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button{
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    border-radius: 5%;
+    background-color: #333;
+    z-index: 1;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: block;
+  }
+
+  .menu-toggle.active + .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    padding: 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+}

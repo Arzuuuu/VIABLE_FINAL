@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js"></script>
+    <title>Responsive Layout</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <div class="box-inner" onclick="showPopUp()">
+                <div class="centered">
+                    <img src="./img/trackers.jpg" alt="img-trackers" id="img-trackers" />
+                </div>
+            </div>
+
+            <div class="box-inner" onclick="openDonation()">
+                <div class="centered">Donate
+                    <img src="./img/donate2.jpg" alt="img-donate" id="img-donate" />
+                </div>
+            </div>
+
+        </div>
+        <div class="box" id="box2">
+            <div class="box-inner" onclick="openForum()">
+                <div class="centered">Forum
+
+                    <img src="./img/forum.jpg" alt="img-forum" id="img-forum" />
+                </div>
+            </div>
+
+            <div class="box-inner">
+                <div class="centered" onclick="openSuggestions()">Alternatives
+                    <!-- Suggestions -->
+                    <img src="./img/suggestion.jpg" alt="img-suggestion" id="img-suggestion">
+                </div>
+            </div>
+        </div>
+        <div class="box" id="box3">
+            <div class="box-inner" onclick="openNewsPage()">
+                <div class="centered">News
+                    <img src="./img/news2.jpg" alt="img-news" id="img-news"></img>
+                </div>
+            </div>
+            <div class="box-inner" onclick="openTheOceanCleanup()">
+                <div class="centered">
+                    <img src="./img/the-ocean-cleanup-vector-logo.png" alt="img-ocean-cleanup" id="img-ocean-cleanup"> </img>
+                    <!-- The Plastic Tracker Map
+                    -by The Ocean Cleanup -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-bg" id="modalBg">
+        <div class="modal">
+            <div class="circle" id="circle1" onclick="openCo2Calculator()">Co2</div>
+            <div class="circle" id="circle2" onclick="openWaterTracker()">Water</div>
+            <div class="circle" id="circle3" onclick="openPlasticTracker()">Plastic</div>
+        </div>
+    </div>
+
+
+    <script src="dashboard.js"></script>
+</body>
+
+
+</html>

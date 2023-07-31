@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <title>Forum Page</title>
+    <link rel="stylesheet" href="forum_page.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="  logo"><a href="index.html">
+                <img src="logo.jpeg" width="50" height="50"></a></div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#account">Account</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <div class="back-to-dash">
+            <a href="index.html#come-back">Go Back</a>
+        </div>
+        <h1>Forum Page</h1>
+        <div class="comment-section">
+            <div class="comment-form">
+                <input type="text" id="username" placeholder="Enter your ID">
+                <textarea id="comment" placeholder="Write your comment here"></textarea>
+                <button id="submitBtn">Post Comment</button>
+            </div>
+            <div id="comments"></div>
+        </div>
+    </div>
+    <script src="forum_page.js"></script>
+</body>
+
+</html>

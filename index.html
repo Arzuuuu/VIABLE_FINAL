@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><a href="index.html">
+                <img src="logo.jpeg" width="50" height="50"></a></div>
+        <div class="menu-toggle">
+            <i class="fa fa-pagelines white-icon fa-2x"></i>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="signin.html">Login</a></li>
+            <li><a href="register.html">Sign In</a></li>
+            <li><a href="#help">Help</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header>
+       
+
+        <div>
+            <video src="./img/header-vid-new.mp4" autoplay loop muted playsinline id="header-video"></video>
+        </div>
+        <div class="content">
+            <h1>Viable</h1>
+            <div class="btn">
+                <button><a href="#about">Explore</a></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="dashboard" id="come-back">
+        <div class="container">
+            <div class="box" id="box1">
+                <div class="box-inner" onclick="showPopUp()">
+                    <div class="centered">
+                        <div class="boxname">Trackers</div>
+                        <img src="./img/trackers.jpg" alt="img-trackers" id="img-trackers" />
+                    </div>
+                </div>
+
+                <div class="box-inner" onclick="openDonation()">
+                    <div class="centered">
+                        <div class="boxname">Donate</div>
+                        <img src="./img/donate2.jpg" alt="img-donate" id="img-donate" />
+                    </div>
+                </div>
+
+            </div>
+            <div class="box" id="box2">
+                <div class="box-inner" onclick="openForum()">
+                    <div class="centered">
+                        <div class="boxname">Forum</div>
+
+                        <img src="./img/forum.jpg" alt="img-forum" id="img-forum" />
+                    </div>
+                </div>
+
+                <div class="box-inner">
+                    <div class="centered" onclick="openSuggestions()">
+                        <div class="boxname" id="boxnamesugg">Suggestions</div>
+                        <!-- Suggestions -->
+                        <img src="./img/suggestion.jpg" alt="img-suggestion" id="img-suggestion">
+                    </div>
+                </div>
+            </div>
+            <div class="box" id="box3">
+                <div class="box-inner" onclick="openNewsPage()">
+                    <div class="centered">
+                        <div class="boxname">News</div>
+                        <img src="./img/news2.jpg" alt="img-news" id="img-news"></img>
+                    </div>
+                </div>
+                <div class="box-inner" onclick="openTheOceanCleanup()">
+                    <div class="centered">
+                        <img src="./img/the-ocean-cleanup-vector-logo.png" alt="img-ocean-cleanup"
+                            id="img-ocean-cleanup"> </img>
+                        <!-- The Plastic Tracker Map
+                        -by The Ocean Cleanup -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-bg" id="modalBg">
+            <div class="modal">
+                <div class="circle" id="circle1" onclick="openCo2Calculator()">Co2</div>
+                <div class="circle" id="circle2" onclick="openWaterTracker()">Water</div>
+                <div class="circle" id="circle3" onclick="openPlasticTracker()">Plastic</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="dashboard-about-separator ">
+
+            <div class="container-about">
+
+                <div class="about-section" id="about">
+
+                    <div class="inner-container">
+                        <h1>About Us</h1>
+                        <p class="text">
+                            Viable is a website that concentrates on calculating, tracking, and reducing co2 emission,
+                            plastic, and water wastage. The website’s main aim is to promote sustainable living, track
+                            carbon footprint, reduce plastic and usage of water, provide educational resources, connect
+                            users with relevant donation and volunteering centers, and give good suggestions to users to
+                            create a sustainable lifestyle.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="footer" id="contact">
+            <div class="column logo">
+                <img src="logo.jpeg" height="100%" width="70%">
+            </div>
+
+            <!-- <div class="footer-links"> -->
+                <div class="column link" id="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#help">Help</a></li>
+                    </ul>
+                </div>
+
+                <div class="column team" id="footer-links">
+                    <h3>Team</h3>
+                    <ul>
+                        <li><a href="#">Arzu</a></li>
+                        <li><a href="#">Deeksha</a></li>
+                        <li><a href="#">Vaishnavi</a></li>
+                    </ul>
+                </div>
+                <div class="column about" id="footer-links">
+                    <h3>Connect</h3>
+                    <p>
+                        <i class="fa fa-envelope "></i>
+                        email@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa fa-phone "></i>
+                        +91 ***** *****
+                    </p>
+                    <div class="social">
+                        <a href="">
+                            <i class="fa fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-google"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

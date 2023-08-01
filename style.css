@@ -431,7 +431,7 @@ div .social {
     right: 0;
     bottom: 0;
     height: 400%;
-    width: 150%;
+    width: 100%;
     z-index: -1;
   }
 
@@ -440,19 +440,30 @@ div .social {
     position: absolute;
     color: white;
     /* top: 45%; */
-    top: 50%;
-    left: 50%;
+    /* top: 50%;
+    left: 50%; */
     transform: translate(-50%, -50%);
     text-align: center;
   }
 
+  
+  .content h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 800;
+  }
+
+  button{
+    width:150px;
+    margin-bottom:20%;
+  }
   .dashboard {
     position: relative;
     z-index: 1;
-    margin-top: 10%;
+    /* margin-top: 10%;
     margin-bottom: 5%;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 5%; */
   }
 
   .container {
@@ -461,6 +472,10 @@ div .social {
     margin: 10%;
     height: 100vh;
     width: 100%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .box {
@@ -472,11 +487,12 @@ div .social {
   #box3 {
     display: flex;
     flex-direction: row;
+    width: 100%;
   }
 
   .box-inner {
-    height: 200px;
-    width: 200px;
+    height: 50%;
+    width: 50%;
   }
 
   img {

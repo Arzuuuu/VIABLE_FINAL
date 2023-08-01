@@ -5,7 +5,13 @@ body {
     padding: 0;
 }
 
+.menu-toggle .bar {
+  display: none;
+}
 
+.white-icon:hover {
+  color: #a5f166;
+}
 
 
 nav {

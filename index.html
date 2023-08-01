@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viable</title>
+    <link rel="icon" type="image/x-icon" href="logo.jpeg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -23,14 +24,14 @@
         </div>
         <ul class="nav-links">
             <li><a href="signin.html">Login</a></li>
-            <li><a href="register.html">Sign In</a></li>
+            <li><a href="register.html">Sign Up</a></li>
             <li><a href="#help">Help</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
 
     <header>
-       
+
 
         <div>
             <video src="./img/header-vid-new.mp4" autoplay loop muted playsinline id="header-video"></video>
@@ -48,8 +49,11 @@
             <div class="box" id="box1">
                 <div class="box-inner" onclick="showPopUp()">
                     <div class="centered">
-                        <div class="boxname">Trackers</div>
+                        <div class="boxname">Trackers
+                        </div>
+
                         <img src="./img/trackers.jpg" alt="img-trackers" id="img-trackers" />
+
                     </div>
                 </div>
 
@@ -96,9 +100,25 @@
 
         <div class="modal-bg" id="modalBg">
             <div class="modal">
-                <div class="circle" id="circle1" onclick="openCo2Calculator()">Co2</div>
-                <div class="circle" id="circle2" onclick="openWaterTracker()">Water</div>
-                <div class="circle" id="circle3" onclick="openPlasticTracker()">Plastic</div>
+                <div class="circle tooltip" id="circle1" onclick="openCo2Calculator()">Co2
+                    <span class="tooltiptext" style="font-size: 10px; font-weight: lighter;">
+                        Click Here to Calculate your Carbon Footprint!
+                    </span>
+                </div>
+
+                <div class="circle tooltip" id="circle2" onclick="openWaterTracker()">
+                    WATER
+                    <span class="tooltiptext" style="font-size: 10px; font-weight: lighter;">
+                        Click Here to Calculate your Water Footprint!
+                    </span>
+                </div>
+
+                <div class="circle tooltip" id="circle3" onclick="openPlasticTracker()">
+                    PLASTIC
+                    <span class="tooltiptext" style="font-size: 10px; font-weight: lighter;">
+                        learn about how many plastic items you consume and discard every year!
+                    </span>
+                </div>
             </div>
         </div>
 
@@ -131,58 +151,58 @@
     <section>
         <div class="footer" id="contact">
             <div class="column logo">
-                <img src="./media/logo_footer.png" height="100%" width="70%">
+                <a href="index.html"><img src="./media/logo_footer.png" height="100%" width="70%"></a>
             </div>
 
             <!-- <div class="footer-links"> -->
-                <div class="column link" id="footer-links">
-                    <h3>Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#help">Help</a></li>
-                    </ul>
-                </div>
+            <div class="column link" id="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#help">Help</a></li>
+                </ul>
+            </div>
 
-                <div class="column team" id="footer-links">
-                    <h3>Team</h3>
-                    <ul>
-                        <li><a href="#">Arzu</a></li>
-                        <li><a href="#">Deeksha</a></li>
-                        <li><a href="#">Vaishnavi</a></li>
-                    </ul>
+            <div class="column team" id="footer-links">
+                <h3>Team</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/arzu-5342b01a1/">Arzu</a></li>
+                    <li><a href="https://www.linkedin.com/in/deeksha-akula-2b101a262/">Deeksha</a></li>
+                    <li><a href="https://www.linkedin.com/in/kanday-vaishnavi-jyothi-231974233/">Vaishnavi</a></li>
+                </ul>
+            </div>
+            <div class="column about" id="footer-links">
+                <h3>Connect</h3>
+                <p>
+                    <i class="fa fa-envelope "></i>
+                    email@gmail.com
+                </p>
+                <p>
+                    <i class="fa fa-phone "></i>
+                    +91 ***** *****
+                </p>
+                <div class="social">
+                    <a href="">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-github"></i>
+                    </a>
                 </div>
-                <div class="column about" id="footer-links">
-                    <h3>Connect</h3>
-                    <p>
-                        <i class="fa fa-envelope "></i>
-                        email@gmail.com
-                    </p>
-                    <p>
-                        <i class="fa fa-phone "></i>
-                        +91 ***** *****
-                    </p>
-                    <div class="social">
-                        <a href="">
-                            <i class="fa fa-facebook-f"></i>
-                        </a>
-                        <a href="">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a href="">
-                            <i class="fa fa-google"></i>
-                        </a>
-                        <a href="">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                        <a href="">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                        <a href="">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </div>
-                </div>
+            </div>
             <!-- </div> -->
         </div>
     </section>

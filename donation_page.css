@@ -20,7 +20,7 @@ body {
 
 .parallax {
   /* The image used */
-  background-image: url("./img/waterfallll.jpg");
+  background-image: url("./img/donationkids.jpg");
 
   min-height: 400px;
 
@@ -124,7 +124,7 @@ nav {
 }
 
 .organization:hover{
-  background-image:url(./img/DALL·E\ 2023-07-09\ 21.39.57\ -\ FOGGY\ PLANTS\ \(1\).png);
+  background-image:url(./img/donate_pic1.avif);
   /* transition-delay: 0.3s; */
   color:white;
 }

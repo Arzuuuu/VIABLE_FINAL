@@ -76,7 +76,7 @@ nav {
 .logo {
   width: 50px;
   height: 50px;
-  margin: 10px;
+  /* margin: 10px; */
   cursor: pointer;
 }
 
@@ -419,7 +419,7 @@ img {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  /* padding: 20px; */
   min-height: 15em;
 }
 
@@ -830,7 +830,7 @@ div .social {
   }
 
   .container-about {
-    min-height: 30vh;
+    min-height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -840,7 +840,6 @@ div .social {
   .about-section {
     background: url(./img/jungle_edit.png);
     background-size: cover;
-    /* padding: 10px; */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -875,7 +874,7 @@ div .social {
     padding-left: 6em;
   }
 
-  #footer-links {
+  /* #footer-links {
     padding-left: 30%;
-  }
+  } */
 }
